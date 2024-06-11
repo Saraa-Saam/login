@@ -1,0 +1,13 @@
+body{
+    background-color: #24353F;
+}
+h1{
+    color: #17A2B8;
+    
+}
+#warning,#warning-required,#warning-userExists{
+    color: #D03540;
+}
+#warning,#warning-required,#warning-userExists{
+    visibility: hidden;
+}

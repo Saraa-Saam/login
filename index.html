@@ -1,0 +1,108 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="use-credentials"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&amp;display=swa"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylesheet.css" />
+  </head>
+  <body>
+    <!-- Signup Section -->
+    <section id="signUpSection" class="container my-5 text-center">
+      <div class="group-input shadow-lg m-auto w-75 p-5">
+        <h1>Smart Login System</h1>
+        <input
+          id="signUpName"
+          class="form-control my-3"
+          placeholder="Enter your name"
+          type="text"
+        />
+        <input
+          id="signUpEmail"
+          class="form-control my-3"
+          placeholder="Enter your email"
+          type="email"
+        />
+        <input
+          id="signUpPassword"
+          class="form-control my-3"
+          placeholder="Enter your password"
+          type="password"
+        />
+        <p id="warning-userExists">user Exists</p>
+        <p id="warning-required">all input required</p>
+
+        <button id="sign-btn" class="btn btn-outline-info w-100 my-3">
+          sign up
+        </button>
+        <p class="text-white">
+          you have an account? <button id="log-btn" class="btn  text-white" >log in</button>
+        </p>
+      </div>
+    </section>
+
+    <!-- Login Section -->
+    <section id="loginSection" class="container my-5 text-center">
+      <div class="group-input shadow-lg m-auto w-75 p-5">
+        <h1>Smart Login System</h1>
+        <input
+          id="loginEmail"
+          class="form-control my-3"
+          placeholder="Enter your email"
+          type="email"
+        />
+        <input
+          id="loginPassword"
+          class="form-control my-3"
+          placeholder="Enter your password"
+          type="password"
+        />
+        <p id="warning" >incorrect email or password</p>
+
+        <button id="login-btn" class="btn btn-outline-info w-100 my-3">
+          Login
+        </button>
+        <p class="text-white">
+          Don’t have an account? <button id="signupBtn" class="btn text-white">sign up</button>
+        </p>
+      </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="homSection">
+      <nav class="navbar navbar-expand-lg navbar-dark group">
+        <div class="container">
+          <a class="navbar-brand" href="#">SMART LOGIN</a>
+          <button id="logout-btn" class="btn text-white">logout</button>
+        </div>
+      </nav>
+      <div class="container my-5 text-center h-100 d-flex align-items-center">
+        <div class="group m-auto w-75 p-5">
+          <h1 id="username">welcome</h1>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
