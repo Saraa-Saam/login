@@ -55,13 +55,15 @@ function handleSignUp() {
   } else {
     document.getElementById("warning-required").style.visibility = "visible";
   }
-  clearForm()
+ 
 }
 function clearForm(){
-  console.log("tote");
-  name.value=" "
-   password.value= " "
-   email.value=" "
+  let name = document.getElementById("signUpName");
+  let password = document.getElementById("signUpPassword");
+  let email = document.getElementById("signUpEmail");
+  name.value=""
+   password.value= ""
+   email.value=""
 
 }
 
@@ -102,6 +104,8 @@ document.getElementById("log-btn").addEventListener("click", function () {
 
 document.getElementById("sign-btn").addEventListener("click", function () {
   handleSignUp();
+  clearForm()
+
 });
 
 document.getElementById("login-btn").addEventListener("click", function () {
